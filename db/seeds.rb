@@ -18,3 +18,14 @@ Book.create(name: "Project Hail Mary", image: "https://www.barnesandnoble.com/w/
 Book.create(name: "Foundation", image: "https://www.amazon.com/Foundation-Isaac-Asimov/dp/0553293354")
 Book.create(name: "Les Miserables", image: "https://www.target.com/p/les-mis-rables-royal-collector-s-edition-annotated-case-laminate-hardcover-with-jacket-by-victor-hugo/-/A-83291749")
 
+User.create(name: "joe", email: "joe@email", password: "testerize")
+User.create(name: "bob", email: "bob@email", password: "testing")
+User.create(name: "tom", email: "tom@email", password: "testtest")
+
+Post.create(user_id: 1, book_id: 1, comment: "good book")
+Post.create(user_id: 2, book_id: 3, comment: "bad book")
+Post.create(user_id: 3, book_id: 7, comment: "great book")
+
+Rating.create(book_id: 1, user_id: 1, score: 4)
+Rating.create(book_id: 3, user_id: 2, score: 2)
+Rating.create(book_id: 7, user_id: 3, score: 5)
