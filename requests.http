@@ -1,0 +1,18 @@
+### User create
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "billy",
+  "email": "testtesttest",
+  "password": "blahblah"
+}
+
+### Session create
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "tom@email",
+  "password": "testtest"
+}
