@@ -1,8 +1,15 @@
 {
   id: book.id,
   name: book.name,
-  rating: book.rating,
+  rating: book.rating_avg,
   image: book.image,
   created_at: book.created_at,
   updated_at: book.updated_at,
+  posts: book.posts.map do |post|
+    {
+      id: post.id,
+      user: post.user,
+      comment: post.comment,
+    }
+  end,
 }

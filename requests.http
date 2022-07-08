@@ -17,6 +17,35 @@ Content-Type: application/json
   "password": "testtest"
 }
 
-### User index
+### Book index
 
 GET http://localhost:3000/books.json
+
+### Post index
+
+GET http://localhost:3000/posts.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTY3ODUxOTV9._E75U-2882A_OKm0hbPpUNUZahfXy6I-ZqAoat_farU
+
+### Post create
+
+POST http://localhost:3000/posts.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTczMDM3NjB9.mN9Kg0-G09PWf4WSW2ObutHKWh5d-5RjInPlMJjevEw
+
+{
+  "comment": "hmmm",
+  "book_id": 1
+}
+
+### Book show
+GET http://localhost:3000/books/1.json
+
+### Rating create
+POST http://localhost:3000/ratings.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTcxMzEzMjh9.J3uOutRj5zvFCLVz6L3NgK96iS8bvDKODesxpdwqw_w
+
+{
+  "book_id": 1,
+  "score": 3
+}
