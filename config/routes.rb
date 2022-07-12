@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get "/posts" => "posts#index"
 
   post "/ratings" => "ratings#create"
+  patch "/ratings" => "ratings#update"
 end
