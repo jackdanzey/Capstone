@@ -21,7 +21,7 @@ Book.create(name: "Les Miserables", image: "https://m.media-amazon.com/images/I/
 User.create(name: "joe", email: "joe@email", password: "password")
 User.create(name: "bob", email: "bob@email", password: "password")
 User.create(name: "tom", email: "tom@email", password: "password")
-User.create(name: "carl", email: "tom@email", password: "password")
+User.create(name: "carl", email: "carl@email", password: "password")
 
 Post.create(user_id: 1, book_id: 1, comment: "good book")
 Post.create(user_id: 2, book_id: 1, comment: "yea its pretty good")

@@ -10,6 +10,7 @@
       id: post.id,
       user: post.user,
       comment: post.comment,
+      created: post.created_at,
     }
   end,
 }
